@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android Apps on Google Play</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/888/888857.png">
+  <!-- fonts from - google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- bootstrap CDN link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand d-none d-md-inline" href="#">
+    <div class="d-flex flex-row m-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/3128/3128279.png" class="nav-logo mt-1" alt="">
+          <p class="nav-logo-title">
+            Google Play
+          </p>
+        </div>
+        </a>
+    <div class="container">
+    
+      <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link d-none d-md-inline mr-2" id="nav-item1" href="#">Games <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-none d-md-inline mr-2" id="nav-item2" href="https://play.google.com/store/apps">Apps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-none d-md-inline mr-2" id="nav-item3" href="https://play.google.com/store/movies">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-none d-md-inline mr-2" id="nav-item4" href="https://play.google.com/store/books">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-none d-md-inline mr-2" id="nav-item5" href="https://play.google.com/store/apps/category/FAMILY">Kids</a>
+          </li>
+        </ul>
+        <form class="form-inline d-none d-md-block my-2 my-lg-0">
+          <input class="form-control mr-sm-2 w-100" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+    <a href="#" class="d-none d-md-inline m-2" data-toggle="modal" data-target="#staticBackdrop"><img
+        src="https://cdn-icons-png.flaticon.com/512/471/471664.png" class="help-logo m-2" alt=""></a>
+    <div class="modal" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-align-center" id="staticBackdropLabel">Help</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="help-card-description">
+              Due to <a href="">Reserve Bank of India (RBI) card storage regulations</a> starting October 1, 2022,
+              Google can no longer save customer card details like card number and expiry date in the current format.
+              However, with your authorization, we’ll save your card details in a format that complies with RBI
+              regulations and keeps your sensitive card details secure. Learn more a
+              <a href="">here</a> or try <a href="">adding or editing your payment method</a>.
+            </p>
+            <p class="help-card-caption">Popular help resources</p>
+            <p class="help-card-list-items p-2">
+              <img src="https://cdn-icons-png.flaticon.com/512/9967/9967503.png" class="help-card-list-items-svg"
+                alt=""> Get started with Google Play
+            </p>
+            <p class="help-card-list-items p-2">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732208.png?w=740&t=st=1678894037~exp=1678894637~hmac=718718e692544e008dd39c6a822e45736c9988cc149866c54e7850f0ca1e4d4f"
+                class="help-card-list-items-svg" alt=""> Check the status of a Play refund request
+            </p>
+            <p class="help-card-list-items p-2">
+              <img src="https://cdn-icons-png.flaticon.com/512/9967/9967503.png" class="help-card-list-items-svg"
+                alt=""> use Play Instant Apps
+            </p>
+            <p class="help-card-list-items p-2">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732208.png?w=740&t=st=1678894037~exp=1678894637~hmac=718718e692544e008dd39c6a822e45736c9988cc149866c54e7850f0ca1e4d4f"
+                class="help-card-list-items-svg" alt=""> Request a refund on Google Play
+            </p>
+            <p class="help-card-list-items  p-2">
+              <img src="https://cdn-icons-png.flaticon.com/512/9967/9967503.png" class="help-card-list-items-svg"
+                alt=""> Use points in the Google Play Store
+            </p>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2 w-100" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <hr class="hr-line" />
+            <p class="help-card-caption">Need more help?</p>
+            <div class="d-flex flex-row help-card-list-items-next">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/724/724713.png?w=740&t=st=1678895008~exp=1678895608~hmac=9103b6ec1845fb2597cae31445eeffb7067714349c7d1329cf4c27548f316a84"
+                class="help-card-list-items-svg1" alt="">
+              <p class="help-card-list-items  p-2">
+                <span class="help-card-caption">Ask the Help Community</span>
+                </br>Get answers from community experts
+              </p>
+            </div>
+            <div class="d-flex flex-row help-card-list-items-next">
+              <img src="https://cdn-icons-png.flaticon.com/512/10068/10068117.png" class="help-card-list-items-svg1"
+                alt="">
+              <p class="help-card-list-items  p-2">
+                <span class="help-card-caption">Contact Us</span>
+                </br>Tell us more and we'll help you get there
+              </p>
+            </div>
+            <hr class="hr-line" />
+            <div class="d-flex flex-row help-card-list-items-next">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/420/420439.png?w=740&t=st=1678896033~exp=1678896633~hmac=c48a5e0cf9909c6e9eff05878a988c6a048dd207576a16c41539f125edbd7639"
+                class="help-card-list-items-svg1" alt="">
+              <p class="help-card-list-items-send-feedback  p-2">
+                Send Feedback
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="form-inline d-md-none w-75 my-2 my-lg-0">
+      <input class="form-control mr-sm-2 w-100" type="search" placeholder="Search for apps ..." aria-label="Search">
+    </form>
+    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/4922/4922379.png" class="notification-icon d-md-none"
+        alt=""></a>
+    <a href="mailto:harsdharsha@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png"
+        class="mail-logo" alt=""></a>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="top-section-cards">
+          <div class="section-card shadow-sm">
+            <img src="https://cdn-icons-png.flaticon.com/512/15/15874.png" class="top-section-cards-svg" alt="">
+            <p class="top-section-cards-caption m-2">
+              Phone
+            </p>
+          </div>
+          <div class="section-card shadow-sm">
+            <img src="https://cdn-icons-png.flaticon.com/512/0/319.png" class="top-section-cards-svg" alt="">
+            <p class="top-section-cards-caption m-2">
+              Tablet
+            </p>
+          </div>
+          <div class="section-card shadow-sm">
+            <img src="https://cdn-icons-png.flaticon.com/512/3159/3159461.png" class="top-section-cards-svg" alt="">
+            <p class="top-section-cards-caption m-2">
+              TV
+            </p>
+          </div>
+          <div class="section-card d-none d-md-flex shadow-sm">
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59505.png" class="top-section-cards-svg d-none d-md-inline" alt="">
+            <p class="top-section-cards-caption m-2 d-none d-md-inline">
+              Chromebook
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h1 class="top-rated-games-head mt-4">
+          Top-rated games
+        </h1>
+      </div>
+      <div class="col-12 col-md-12 d-flex flex-row w-100">
+        <div class="games-section w-100">
+          <div>
+            <a href="https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf"><img
+                src="https://play-lh.googleusercontent.com/9YrI-q-ERIbq98weqy81CWVuuKf09r8ILOB7F6j2gQebKC3pEw_n4BlMwBVGZSeDdnw=w526-h296-rw"
+                class="games-card-img w-75 d-md-none" alt="..."></a>
+            <a href="https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf"><img
+                src="https://i.ytimg.com/vi/m2bM-r-2KYs/maxresdefault.jpg"
+                class="games-card-img w-100 d-none d-md-inline" alt="..."></a>
+          </div>
+          <div class="games-section-details mt-md-4 mt-3">
+            <div class="d-flex flex-row">
+              <img
+                src="https://play-lh.googleusercontent.com/pl60B3sxB0N3fH1LeepWWUUxIErNb0NAv4LeqKlONKIwsZswQ6B7UbjibB2ZzOw1dQ"
+                class="games-card-img-icon d-md-none" alt="">
+              <img
+                src="https://play-lh.googleusercontent.com/pl60B3sxB0N3fH1LeepWWUUxIErNb0NAv4LeqKlONKIwsZswQ6B7UbjibB2ZzOw1dQ"
+                class="games-card-img-icon1 d-none d-md-inline" alt="">
+              <div class="text-cont d-flex flex-column ml-3 ml-md-5 mt-md-1">
+                <p class="games-section-card-details-title">
+                  Subway surfers
+                </p>
+                <p class="games-section-card-details-genre">
+                  Action * Runner
+                </p>
+                <p class="games-section-card-details-rating">
+                  4.4 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg> 114 MB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="games-section d-none d-md-block w-100">
+          <a href="https://play.google.com/store/apps/details?id=com.imangi.templerun2"><img
+              src="https://downloadr2.apkmirror.com/wp-content/uploads/2022/12/06/638e2b40bd49f.png"
+              class="games-card-img w-75 d-md-none" alt="..."></a>
+          <a href="https://play.google.com/store/apps/details?id=com.imangi.templerun2"><img
+              src="https://i.ytimg.com/vi/9aK2zoFBbKY/maxresdefault.jpg" class="games-card-img w-100 d-none d-md-inline"
+              alt="..."></a>
+          <div class="games-section-details mt-md-4 mt-3">
+            <div class="d-flex flex-row">
+              <a href="https://play.google.com/store/apps/details?id=com.imangi.templerun2"><img
+                  src="https://play-lh.googleusercontent.com/pl60B3sxB0N3fH1LeepWWUUxIErNb0NAv4LeqKlONKIwsZswQ6B7UbjibB2ZzOw1dQ"
+                  class="games-card-img-icon d-md-none" alt=""></a>
+              <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2022/12/06/638e2b40bd49f.png"
+                class="games-card-img-icon1 d-none d-md-inline" alt="">
+              <div class="text-cont d-flex flex-column ml-3 ml-md-5 mt-md-1">
+                <p class="games-section-card-details-title">
+                  Temple Run
+                </p>
+                <p class="games-section-card-details-genre">
+                  Action * Runner
+                </p>
+                <p class="games-section-card-details-rating">
+                  4.1 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg> 138 MB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="games-section d-none d-md-block w-100">
+          <a href="https://play.google.com/store/apps/details?id=com.fingersoft.hillclimb"><img
+              src="https://downloadr2.apkmirror.com/wp-content/uploads/2022/12/06/638e2b40bd49f.png"
+              class="games-card-img w-75 d-md-none" alt="..."></a>
+          <a href="https://play.google.com/store/apps/details?id=com.fingersoft.hillclimb"><img
+              src="https://i.ytimg.com/vi/jYEu1p1uaVQ/maxresdefault.jpg" class="games-card-img w-100 d-none d-md-inline"
+              alt="..."></a>
+          <div class="games-section-details mt-md-4 mt-3">
+            <div class="d-flex flex-row">
+              <img
+                src="https://play-lh.googleusercontent.com/pl60B3sxB0N3fH1LeepWWUUxIErNb0NAv4LeqKlONKIwsZswQ6B7UbjibB2ZzOw1dQ"
+                class="games-card-img-icon d-md-none" alt="">
+              <img
+                src="https://play-lh.googleusercontent.com/N0UxhBVUmx8s7y3F7Kqre2AcpXyPDKAp8nHjiPPoOONc_sfugHCYMjBpbUKCMlK_XUs"
+                class="games-card-img-icon1 d-none d-md-inline" alt="">
+              <div class="text-cont d-flex flex-column ml-3 ml-md-5 mt-md-1">
+                <p class="games-section-card-details-title">
+                  Hill Climb Racing
+                </p>
+                <p class="games-section-card-details-genre">
+                  Racing
+                </p>
+                <p class="games-section-card-details-rating">
+                  4.2 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg> 100 MB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-4">
+        <h1 class="new-and-updated-games">
+          New & updated games </br>
+          <span class="text-muted highlight">Selected games of the week</span>
+        </h1>
+      </div>
+      <div class="col-12 col-md-6 mt-3 d-flex flex-row">
+        <div class="new-games d-flex flex-row w-100">
+          <img
+            src="https://play-lh.googleusercontent.com/FIldEX6IcJEju0BeWPhXZ3duzgxm9_fTtwPiIesBT9ddwFpeFw0FAjEpYU9vmqccpe7h"
+            class="new-games-icons w-50 d-none d-md-inline" alt="">
+          <img
+            src="https://play-lh.googleusercontent.com/FIldEX6IcJEju0BeWPhXZ3duzgxm9_fTtwPiIesBT9ddwFpeFw0FAjEpYU9vmqccpe7h"
+            class="new-games-icons1 d-md-none" alt="">
+          <div class="text-cont d-flex flex-column ml-1 ml-md-2 mt-1 mt-md-2">
+            <p class="games-section-card-details-title">
+              FreeFire
+            </p>
+            <p class="games-section-card-details-genre">
+              Action
+            </p>
+            <p class="games-section-card-details-rating">
+              4.4 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg> 1GB
+            </p>
+          </div>
+        </div>
+        <div class="new-games d-flex flex-row w-100">
+          <img src="https://assets1.ignimgs.com/2018/08/28/levelhead-button-00-1535486043508.jpg"
+            class="new-games-icons w-50 d-none d-md-inline" alt="">
+          <img src="https://assets1.ignimgs.com/2018/08/28/levelhead-button-00-1535486043508.jpg"
+            class="new-games-icons1 d-md-none" alt="">
+          <div class="text-cont d-flex flex-column ml-1 ml-md-2 mt-1 mt-md-2">
+            <p class="games-section-card-details-title">
+              Level
+            </p>
+            <p class="games-section-card-details-genre">
+              Action
+            </p>
+            <p class="games-section-card-details-rating">
+              4..0 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg> 5GB
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mt-3 d-flex flex-row">
+        <div class="new-games d-flex flex-row w-100">
+          <img
+            src="https://play-lh.googleusercontent.com/LByrur1mTmPeNr0ljI-uAUcct1rzmTve5Esau1SwoAzjBXQUby6uHIfHbF9TAT51mgHm"
+            class="new-games-icons w-50 d-none d-md-inline" alt="">
+          <img
+            src="https://play-lh.googleusercontent.com/LByrur1mTmPeNr0ljI-uAUcct1rzmTve5Esau1SwoAzjBXQUby6uHIfHbF9TAT51mgHm"
+            class="new-games-icons1 d-md-none" alt="">
+          <div class="text-cont d-flex flex-column ml-1 ml-md-2 mt-1 mt-md-2">
+            <p class="games-section-card-details-title d-none d-md-block">
+              Clash
+            </p>
+            <p class="games-section-card-details-title d-md-none">
+              Clash
+            </p>
+            <p class="games-section-card-details-genre">
+              Acrade
+            </p>
+            <p class="games-section-card-details-rating">
+              4.3 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg> 3GB
+            </p>
+          </div>
+        </div>
+        <div class="new-games d-flex flex-row w-100">
+          <img
+            src="https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP"
+            class="new-games-icons w-50 d-none d-md-inline" alt="">
+          <img
+            src="https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP"
+            class="new-games-icons1 d-md-none" alt="">
+          <div class="text-cont d-flex flex-column ml-1 ml-md-2 mt-1 mt-md-2">
+            <p class="games-section-card-details-title">
+              Minecraft
+            </p>
+            <p class="games-section-card-details-genre">
+              Action
+            </p>
+            <p class="games-section-card-details-rating">
+              4.4 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg> 1GB
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mt-3 d-flex flex-row">
+        <div class="new-games d-flex flex-row w-100">
+          <img
+            src="https://play-lh.googleusercontent.com/Mn9NateYFRZQbWnlZvszDPoKZbeuZM2O-Kyn7EKRCZI3D8joecHqytfOx73IyuAwHw"
+            class="new-games-icons w-50 d-none d-md-inline" alt="">
+          <img
+            src="https://play-lh.googleusercontent.com/Mn9NateYFRZQbWnlZvszDPoKZbeuZM2O-Kyn7EKRCZI3D8joecHqytfOx73IyuAwHw"
+            class="new-games-icons1 d-md-none" alt="">
+          <div class="text-cont d-flex flex-column ml-1 ml-md-2 mt-1 mt-md-2">
+            <p class="games-section-card-details-title">
+              Dead 
+            </p>
+            <p class="games-section-card-details-genre">
+              Fighting
+            </p>
+            <p class="games-section-card-details-rating">
+              4.1 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg> 2GB
+            </p>
+          </div>
+        </div>
+        <div class="new-games d-flex flex-row w-100">
+          <img
+            src="https://play-lh.googleusercontent.com/MDaSgXlbRkftfjNIdJ2oHodVBVLOmVg2PevfdzJkbtlawfMA-8gMAs-kCfXXY5XyLw=w240-h480-rw"
+            class="new-games-icons w-50 d-none d-md-inline" alt="">
+          <img
+            src="https://play-lh.googleusercontent.com/MDaSgXlbRkftfjNIdJ2oHodVBVLOmVg2PevfdzJkbtlawfMA-8gMAs-kCfXXY5XyLw=w240-h480-rw"
+            class="new-games-icons1 d-md-none" alt="">
+          <div class="text-cont d-flex flex-column ml-1 ml-md-2 mt-1 mt-md-2">
+            <p class="games-section-card-details-title">
+              Pokemon 
+            </p>
+            <p class="games-section-card-details-genre">
+              Action
+            </p>
+            <p class="games-section-card-details-rating">
+              3.9 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg> 1GB
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mt-3 d-flex flex-row">
+        <div class="new-games d-flex flex-row w-100">
+          <img
+            src="https://play-lh.googleusercontent.com/He92papZcOmkgTi1sLHXQQb02aoyRtJ8ml96njM_cSAcpHhILvxMjhLix4mYEIKXPq4"
+            class="new-games-icons w-50 d-none d-md-inline" alt="">
+          <img
+            src="https://play-lh.googleusercontent.com/He92papZcOmkgTi1sLHXQQb02aoyRtJ8ml96njM_cSAcpHhILvxMjhLix4mYEIKXPq4"
+            class="new-games-icons1 d-md-none" alt="">
+          <div class="text-cont d-flex flex-column ml-1 ml-md-2 mt-1 mt-md-2">
+            <p class="games-section-card-details-title d-none d-md-block">
+              Stardew 
+            </p>
+            <p class="games-section-card-details-title d-md-none">
+              Stardew
+            </p>
+            <p class="games-section-card-details-genre">
+              Adventure
+            </p>
+            <p class="games-section-card-details-rating">
+              4.1 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg> 2GB
+            </p>
+          </div>
+        </div>
+        <div class="new-games d-flex flex-row w-100">
+          <img
+            src="https://play-lh.googleusercontent.com/bPz1guJ6FHF3oIOEy3KqwpaDDKO-hLRaZoyzmM8bLFLN8fWm6L0_EuUnkwv9iqPo3Ag"
+            class="new-games-icons w-50 d-none d-md-inline" alt="">
+          <img
+            src="https://play-lh.googleusercontent.com/bPz1guJ6FHF3oIOEy3KqwpaDDKO-hLRaZoyzmM8bLFLN8fWm6L0_EuUnkwv9iqPo3Ag"
+            class="new-games-icons1 d-md-none" alt="">
+          <div class="text-cont d-flex flex-column ml-1 ml-md-2 mt-1 mt-md-2">
+            <p class="games-section-card-details-title">
+              8 Ball
+            </p>
+            <p class="games-section-card-details-genre">
+              Sports
+            </p>
+            <p class="games-section-card-details-rating">
+              4.3 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg> 1GB
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contanier-fluid bg-section mt-5 mb-2 d-none d-md-block">
+    <div class="row">
+      <div class="d-flex flex-column flex-md-row justify-content-md-center justify-content-start">
+        <div class="col-4 col-md-2">
+          <div class="bg-games">
+            <div>
+            <img
+              src="https://play-lh.googleusercontent.com/_USWaZhIWnx3LrIwv3BX8v60vP3Puj7nknJBxUrYTg-R_-Jp7Df8aVgtz5WhUJbheA=w240-h480-rw"
+              class="new-games-icons2 w-75 d-none d-md-inline mt-5 ml-5 mr-5 mb-2" alt="">
+            <img
+              src="https://play-lh.googleusercontent.com/bPz1guJ6FHF3oIOEy3KqwpaDDKO-hLRaZoyzmM8bLFLN8fWm6L0_EuUnkwv9iqPo3Ag"
+              class="new-games-icons1 w-75 d-md-none m-3" alt="">
+            </div>
+            <div class="text-cont d-none d-md-block d-flex flex-column mb-5 ml-5">
+              <p class="games-section-card-details-title d-none d-md-block">
+                Streets
+              </p>
+              <p class="games-section-card-details-genre d-none d-md-block">
+                Fighting
+              </p>
+              <p class="games-section-card-details-rating d-none d-md-block">
+                4.2 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                  class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg> 2GB
+              </p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="bg-games">
+            <div>
+            <img
+              src="https://play-lh.googleusercontent.com/WjXoRzJKWHJ_x52qWYA6ECM70bq3x0vwwYiBhzLXdOIHCo-obdUTztPbskEn0K8_wBs"
+              class="new-games-icons2 w-75 d-none d-md-inline mt-5 ml-5 mr-5 mb-2" alt="">
+            <img
+              src="https://play-lh.googleusercontent.com/bPz1guJ6FHF3oIOEy3KqwpaDDKO-hLRaZoyzmM8bLFLN8fWm6L0_EuUnkwv9iqPo3Ag"
+              class="new-games-icons1 w-75 d-md-none m-3" alt="">
+            </div>
+            <div class="text-cont d-none d-md-block d-flex flex-column mb-5 ml-5">
+              <p class="games-section-card-details-title d-none d-md-block">
+                COD
+              </p>
+              <p class="games-section-card-details-genre d-none d-md-block">
+                Action
+              </p>
+              <p class="games-section-card-details-rating d-none d-md-block">
+                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                  class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg> 4GB
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="bg-games">
+            <div>
+            <img
+              src="https://play-lh.googleusercontent.com/8i3vkDVETbTkOKa38BIw333jH5LzQDf1HPVouBeta3kNExmElc3bet78LbFXxwUI1A=w240-h480-rw"
+              class="new-games-icons2 w-75 d-none d-md-inline mt-5 ml-5 mr-5 mb-2" alt="">
+            <img
+              src="https://play-lh.googleusercontent.com/8i3vkDVETbTkOKa38BIw333jH5LzQDf1HPVouBeta3kNExmElc3bet78LbFXxwUI1A=w240-h480-rw"
+              class="new-games-icons1 w-75 d-md-none m-3" alt="">
+            </div>
+            <div class="text-cont d-none d-md-block d-flex flex-column mb-5 ml-5">
+              <p class="games-section-card-details-title  d-none d-md-block">
+                Sky
+              </p>
+              <p class="games-section-card-details-genre d-none d-md-block">
+                Adventure
+              </p>
+              <p class="games-section-card-details-rating d-none d-md-block">
+                4.0 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                  class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg> 1GB
+              </p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-2">
+        <a href="https://play.google.com/store/games" class="text-decoration-none"><h5 class="footer-section-starting text-muted text-center text-uppercase">
+          Show More
+        </h5></a>
+      </div>
+      <div class="col-12">
+        <hr class="footer-sect-hr-line"/>
+      </div>
+      <div class="col-4">
+        <h5 class="contact-sect mb-2">
+          Google Play
+        </h5>
+        <a href="https://play.google.com/about/play-pass/" class="text-decoration-none  foot-sect-region-link">Play Pass</a><br>
+        <a href="https://play.google.com/store/points/enroll" class="text-decoration-none  foot-sect-region-link">Play Points</a><br>
+        <a href="https://play.google.com/about/giftcards/" class="text-decoration-none  foot-sect-region-link">Gift cards</a><br>
+        <a href="https://play.google.com/store/games?code" class="text-decoration-none  foot-sect-region-link">Redeem</a><br>
+        <a href="https://support.google.com/googleplay/answer/2479637?visit_id=638145579260686694-2228286144&rd=1" class="text-decoration-none foot-sect-region-link">Refund policy</a><br>
+      </div>
+      <div class="col-4">
+        <h5 class="contact-sect mb-2">
+          Kids & family
+        </h5>
+        <a href="https://support.google.com/googleplay/answer/6209547?visit_id=638145579262597237-2019780301&p=pff_parentguide&rd=1" class=" foot-sect-region-link text-decoration-none">Parent Guide</a><br>
+        <a href="https://support.google.com/googleplay/answer/7007852" class="text-decoration-none  foot-sect-region-link">Family sharing</a><br>
+      </div>
+      <div class="col-12 mt-4 mb-3">
+        <a href="https://play.google.com/intl/en_in/about/play-terms/index.html" class="text-decoration-none mr-4 foot-sect-region-link">Terms of Service</a>
+        <a href="https://policies.google.com/privacy" class="text-decoration-none mr-4 foot-sect-region-link">Privacy</a>
+        <a href="https://support.google.com/googleplay/answer/6034670?visit_id=638145579262597237-2019780301&p=about_play&rd=1" class="text-decoration-none mr-4 foot-sect-region-link">About Google Play</a>
+        <a href="https://developer.android.com/index.html" class="text-decoration-none mr-4 foot-sect-region-link">Developers</a>
+        <a href="https://store.google.com/?playredirect=true&pli=1&hl=en-GB" class="text-decoration-none mr-4 foot-sect-region-link">Google Store</a>
+        <a href="https://play.google.com/store/games?code" class="text-decoration-none foot-sect-region-link mr-4">All prices include GST.</a>
+        <a href="" class="ml-2 ml-md-5"><img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" class="foot-sect-region" alt=""></a><a href="#" class="ml-2 ml-md-4 foot-sect-region-title">India (English)</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

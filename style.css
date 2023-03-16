@@ -1,0 +1,269 @@
+
+/* Navbar Section */
+
+.nav-logo {
+    width: 7%;
+    height: 10%;
+}
+
+.nav-log-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: grey;
+}
+
+.notification-icon {
+    width: 40px;
+}
+
+.help-logo {
+    width: 30px;
+}
+
+.mail-logo {
+    width: 35px;
+}
+
+a#nav-item1 {
+    font-size: 1.2rem;
+    font-family: "Roboto";
+}
+
+a#nav-item2 {
+    font-size: 1.2rem;
+    font-family: "Roboto";
+}
+
+a#nav-item3 {
+    font-size: 1.2rem;
+    font-family: "Roboto";
+}
+
+a#nav-item4 {
+    font-size: 1.2rem;
+    font-family: "Roboto";
+}
+
+a#nav-item5 {
+    font-size: 1.2rem;
+    font-family: "Roboto";
+}
+
+.help-card-description {
+    background-color: #c7ddff;
+    width:100%;
+    font-family: "Roboto";
+}
+
+.help-card-description a {
+    text-decoration: underline;
+}
+
+.help-card-caption {
+    font-weight: 600;
+    font-family: "Roboto";
+    margin: 2px;
+}
+
+.help-card-list-items {
+    font-family: "Roboto";
+}
+
+.help-card-list-items:hover {
+    background-color: #dfe5ed;
+    cursor: pointer;
+}
+
+.help-card-list-items-svg {
+    width: 40px;
+    padding: 10px;
+    background-color: #c7ddff;
+    border-radius: 100%;
+}
+
+.hr-line {
+    background-color: #dfe5ed;
+    border-width: 8px;
+}
+
+.help-card-list-items-next:hover {
+    background-color: #dfe5ed;
+    cursor: pointer;
+}
+
+.help-card-list-items-next {
+    display: grid;
+    place-items: center;
+    padding: 4px;
+}
+
+.help-card-list-items-svg1 {
+    width: 38px;
+    height: 40px;
+    padding: 10px;
+    background-color: #c7ddff;
+    border-radius: 100%;
+}
+
+.help-card-list-items-send-feedback {
+    color: #1E90FF;
+    font-weight: 600;
+}
+
+/* Top card Section */
+
+.section-card {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-around;
+    width: auto;
+    height: 4vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gainsboro;
+    border-radius: 25px;
+    padding: 12px;
+    margin: 4px;
+
+}
+
+.section-card:hover {
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.top-section-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-section-cards-svg {
+    width: 20px;
+}
+
+.top-section-cards-caption {
+    font-size: 1.2rem;
+}
+
+.top-rated-games-head {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "roboto";
+}
+
+/* Games Section */
+
+.games-section {
+    width: auto !important;
+    object-fit: fill;
+    padding: 10px;
+}
+
+
+.games-card-img {
+    border-radius: 10px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.games-card-img-icon {
+    width: 20%;
+    height: 10%;
+    object-fit: fill;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.games-card-img-icon1 {
+    width: 20%;
+    height: 10%;
+    object-fit: fill;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.text-cont {
+    line-height: 60%;
+}
+
+.games-section-card-details-title {
+    font-family: "roboto";
+}
+
+.games-section-card-details-genre {
+    font-family: "roboto";
+}
+
+.games-section-card-details-rating {
+    font-family: "Roboto";
+}
+
+/* New Games & Update Section */
+
+.new-and-updated-games {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "roboto";
+}
+
+.highlight {
+    font-size: 1.0rem;
+}
+
+.new-games-icons {
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.new-games-icons1 {
+    width: 35%;
+    height: 80%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* highlight Section */
+
+.bg-section {
+    background-image: linear-gradient(to left, #f12711,#f12711, #f5af19);
+    height: 60vh;
+    overflow-x: hidden;
+}
+
+.new-games-icons2 {
+    width: 10%;
+    height: 40%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Footer Section */
+
+.footer-sect-hr-line {
+    background-color: gainsboro;
+    border-width: 4px;
+}
+
+.foot-sect-region {
+    width: 6%;
+}
+
+a.foot-sect-region-link {
+    color: grey
+} 
+
+a.foot-sect-region-link:hover {
+    color: #3CB371;
+}
+
+a.foot-sect-region-title {
+    text-decoration: none;
+    color: grey;
+}
+
+a.foot-sect-region-title:hover {
+    text-decoration: none;
+    color: grey;
+}
